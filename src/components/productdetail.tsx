@@ -5,30 +5,73 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import './productdetail.css';
 
-import Bottle from '../assets/oil/bottle.jpg';
-
 import db from '../assets/db.json';
 
 
 function ProductDetails() {
 
     const [product, setProduct] = useState<any>(null);
-    const navigate = useNavigate();
+    const [coverImg, setCoverImg] = useState<string>("");
+    const [coverImgIndex, setCoverImgIndex] = useState<number>();
     const { productID } = useParams<string>();
+
+    const navigate = useNavigate();
 
     // set product
     useEffect(() => {
         let arr = db['productList'];
         let product = arr.find((product) => product.id === parseInt(productID ?? ""));
 
-        if (!product) {
+        if (!product || product == null) {
             navigate('/');
             return;
         }
+        // set product
         setProduct(product);
-
         console.log('product=>', product);
+        // set coverimage
+        setCoverImg(product.cover_img);
+        // set coverimage index
+        let index = product.img_array.findIndex(img => img === product?.cover_img);
+        setCoverImgIndex(index);
     }, []);
+
+
+    const updatePreviewImage = (img: string, index: number) => {
+        setCoverImg(img);
+        setCoverImgIndex(index);
+    }
+
+    const contentMaker = () => {
+        let arr = product?.content ?? [];
+        return (
+            arr.map((obj: any) => {
+                if (obj.type === "li") {
+                    return (
+                        <>
+                            <b>{obj?.key}</b>
+                            <ol>
+                                {obj?.value?.map((val: string) => <li>{val}</li>)}
+                            </ol>
+                        </>
+                    )
+                }
+                if (obj.type === "span") {
+                    return (
+                        <>
+                            <b>{obj?.key}</b>
+                            <span>{obj?.value?.join(', ')}</span>
+                        </>
+                    )
+                }
+                return (
+                    <>
+                    </>
+                )
+            })
+        )
+    }
+
 
 
     if (!product) {
@@ -49,55 +92,51 @@ function ProductDetails() {
 
                     {/* preview image */}
                     <div className="pic-list preview-image">
-                        <button id='back_button' type="button" className="d-btn btn btn-outline-dark" data-mdb-ripple-color="dark">
+                        <button id='back_button' type="button" className="d-btn btn btn-outline-dark" data-mdb-ripple-color="dark" onClick={() => navigate(-1)}>
                             <i className="fa fa-arrow-left"></i>
                         </button>
-                        <img src={Bottle} className="img-fluid w-100" loading="lazy" />
+                        <img src={coverImg} className="img-fluid w-100 cover-img" loading="lazy" />
                     </div>
 
                     {/* list of images */}
-                    <div className='d-flex align-items-center justify-content-between my-3 parent-carosol' >
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
-                        <a className="navbar-brand pic-list mx-2" role="button">
-                            <img src={Bottle} height="40" alt="logo" loading="lazy" />
-                        </a>
+                    <div className='d-flex align-items-center justify-content-center'>
+                        <div className='d-flex align-items-center justify-content-between my-3 parent-carosol' >
+                            {
+                                product && product.img_array && product.img_array.map((img: string, index: number) => {
+                                    return (
+                                        <a role="button"
+                                            onClick={() => updatePreviewImage(img, index)}
+                                            className={`navbar-brand pic-list mx-2 ${coverImgIndex === index ? 'active-img' : ''}`}>
+                                            <img src={img} height="40" width="45" alt="logo" loading="lazy" />
+                                        </a>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
 
                 </div>
 
                 {/* RIGHT */}
                 <div className='col-lg-6 col-md-7 col-sm-12 sub-parent-story'>
-                    <h5 className='text-center mb-2'>Brilliantine (200 ml)</h5>
+                    <h5 className='text-center mb-2'>{product.name} ({product.size})</h5>
                     <p className="sub-story">
-                        <b>Direction for use-</b>
-                        <ol>
-                            <li>Apply a few drops on scalp and massage with fingertips, to help the oil penetrate into the roots of your hair.</li>
-                            <li>Leave for atleast 2-4 hrs or overnight for better results</li>
-                        </ol>
 
-                        <b>Advantages-</b>
-                        <span>controls hair fall, adds strength and shine, balances scalp, safe for all hair types, helps in detangling the hair, increases shine, perfect for hair moisturization, helps to get silkier, 100% Natural Free of Harmful Chemicals  & Toxins, Anti- Dandruff,</span>
+                        <p>{product.card_text}</p>
+
+                        {contentMaker()}
                     </p>
+
+                    <footer className='w-100 row'>
+                        <div className='col-lg-6 col-md-5 col-sm-12'>
+                            <h5>
+                                ₹ {product.price} ONLY
+                            </h5>
+                        </div>
+                        <span className='col-lg-6 col-md-5 col-sm-12'>
+                            Additional Packaging Charges (if applicable)
+                        </span>
+                    </footer>
 
                 </div>
 

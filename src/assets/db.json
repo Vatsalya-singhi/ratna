@@ -14,14 +14,15 @@
                 "/img/oil/massage%20oil.jpg",
                 "/img/oil/oil%20bottle.jpg"
             ],
-            "size": "200 ml",
+            "size": "300 ml",
             "content": [
                 {
                     "key": "Direction for use",
                     "value": [
                         "Apply a few drops on scalp and massage with fingertips, to help the oil penetrate into the roots of your hair.",
                         "Leave for atleast 2-4 hrs or overnight for better results"
-                    ]
+                    ],
+                    "type": "li"
                 },
                 {
                     "key": "Advantages",
@@ -36,7 +37,8 @@
                         "helps to get silkier",
                         "100% Natural Free of Harmful Chemicals & Toxins",
                         "Anti- Dandruff"
-                    ]
+                    ],
+                    "type": "span"
                 }
             ],
             "price": "1200"
@@ -61,7 +63,8 @@
                     "value": [
                         "Apply a few drops on scalp and massage with fingertips, to help the oil penetrate into the roots of your hair.",
                         "Leave for atleast 2-4 hrs or overnight for better results"
-                    ]
+                    ],
+                    "type": "li"
                 },
                 {
                     "key": "Advantages",
@@ -74,7 +77,8 @@
                         "It also goes well with other products like Aromatherapy to enhance skin improvement.",
                         "100% Natural Free of Harmful Chemicals & Toxins",
                         "Try it today for a healthy, beautiful you!"
-                    ]
+                    ],
+                    "type": "span"
                 }
             ],
             "price": "1200"
@@ -88,8 +92,8 @@
             "img_array": [
                 "/img/dry_fruits_burfi/burfi.jpg",
                 "/img/dry_fruits_burfi/dry-fruits-burfi-1.png",
-                "/img/dry_fruits_burfi/dry-fruits-burfi-2.png",
-                "/img/dry_fruits_burfi/dry-fruits-burfi-3.png"
+                "/img/dry_fruits_burfi/dry-fruits-burfi-2.jpg",
+                "/img/dry_fruits_burfi/dry-fruits-burfi-3.jpg"
             ],
             "size": "200 ml",
             "content": [],

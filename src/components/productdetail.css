@@ -39,6 +39,17 @@
     transform: translateX(-5px);
 }
 
+.cover-img {
+    width: 100% !important;
+    max-height: 55vh !important;
+    height: 55vh !important;
+}
+
+.active-img {
+    border: 2px solid rgb(29, 27, 27);
+    border-radius: 10px;
+}
+
 .content {
     border-top-left-radius: 20px;
 }
