@@ -1,0 +1,61 @@
+.pic-list {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.mw-992px {
+    max-width: 992px !important;
+}
+
+.icon-style {
+    font-size: 1.5em;
+    color: #2f2f2f;
+    display: inline-block;
+}
+
+.parent-carosol {
+    position: relative;
+    overflow-x: scroll;
+}
+
+.bg-f9f9f9 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.preview-image {
+    position: relative;
+}
+
+.d-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.d-btn:hover {
+    transform: translateX(-5px);
+}
+
+.content {
+    border-top-left-radius: 20px;
+}
+
+.sub-parent-story {
+    display: block;
+    text-align: center;
+    /* font-size: 1.1em; */
+    /* line-height: 1.1em; */
+    /* letter-spacing: 0.6px; */
+    color: black;
+    text-align: start;
+}
+
+.sub-story {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}

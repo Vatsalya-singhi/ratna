@@ -1,0 +1,99 @@
+{
+    "productList": [
+        {
+            "id": 0,
+            "name": "Brilliantine",
+            "cover_img": "/img/oil/bottle.jpg",
+            "card_title": "Brilliantine",
+            "card_text": "The formulation of neem, nettle, birch bark, arnica and burdock root infused with handpressed oil addresses a variety of hair and scalp needs.",
+            "img_array": [
+                "/img/oil/bottle.jpg",
+                "/img/oil/hairstock1.jpg",
+                "/img/oil/hairstock2.webp",
+                "/img/oil/hairstock3.jpg",
+                "/img/oil/massage%20oil.jpg",
+                "/img/oil/oil%20bottle.jpg"
+            ],
+            "size": "200 ml",
+            "content": [
+                {
+                    "key": "Direction for use",
+                    "value": [
+                        "Apply a few drops on scalp and massage with fingertips, to help the oil penetrate into the roots of your hair.",
+                        "Leave for atleast 2-4 hrs or overnight for better results"
+                    ]
+                },
+                {
+                    "key": "Advantages",
+                    "value": [
+                        "controls hair fall",
+                        "adds strength and shine",
+                        "balances scalp",
+                        "safe for all hair types",
+                        "helps in detangling the hair",
+                        "increases shine",
+                        "perfect for hair moisturization",
+                        "helps to get silkier",
+                        "100% Natural Free of Harmful Chemicals & Toxins",
+                        "Anti- Dandruff"
+                    ]
+                }
+            ],
+            "price": "1200"
+        },
+        {
+            "id": 1,
+            "name": "Aloe Vera Gel",
+            "cover_img": "/img/aloe_vera/aloevera.jpg",
+            "card_title": "Aloe Vera Gel",
+            "card_text": "The Aloe Vera Gel extract is an excellent natural day cream for face and body and help soothe your skin problems. 100% organic and safe for natural healthy skin.",
+            "img_array": [
+                "/img/aloe_vera/aloevera.jpg",
+                "/img/aloe_vera/aloe-vera-1.jpg",
+                "/img/aloe_vera/aloe-vera-2.jpg",
+                "/img/aloe_vera/aloe-vera-3.jpg",
+                "/img/aloe_vera/aloe-vera-4.jpg"
+            ],
+            "size": "200 ml",
+            "content": [
+                {
+                    "key": "Direction for use",
+                    "value": [
+                        "Apply a few drops on scalp and massage with fingertips, to help the oil penetrate into the roots of your hair.",
+                        "Leave for atleast 2-4 hrs or overnight for better results"
+                    ]
+                },
+                {
+                    "key": "Advantages",
+                    "value": [
+                        "Aloe Vera Gel is a natural, organic product that has been amplified by a process called gel-filtration.",
+                        "The Aloe Vera Gel extract is an excellent natural day cream for face and body and help soothe your skin problems.",
+                        "It helps heal skin conditions like eczema, psoriasis, sunburns and acne",
+                        "It is an excellent natural day cream for face and body",
+                        "Made with organic ingredients, this product will help soothe skin problems",
+                        "It also goes well with other products like Aromatherapy to enhance skin improvement.",
+                        "100% Natural Free of Harmful Chemicals & Toxins",
+                        "Try it today for a healthy, beautiful you!"
+                    ]
+                }
+            ],
+            "price": "1200"
+        },
+        {
+            "id": 2,
+            "name": "Dry Fruits Burfi",
+            "cover_img": "/img/dry_fruits_burfi/burfi.jpg",
+            "card_title": "Dry Fruits Burfi",
+            "card_text": "This sweet has no artificial sweetner and rich source of protein, vitamins, minerals, and dietary fiber, making them a tasty and healthy snack.",
+            "img_array": [
+                "/img/dry_fruits_burfi/burfi.jpg",
+                "/img/dry_fruits_burfi/dry-fruits-burfi-1.png",
+                "/img/dry_fruits_burfi/dry-fruits-burfi-2.png",
+                "/img/dry_fruits_burfi/dry-fruits-burfi-3.png"
+            ],
+            "size": "200 ml",
+            "content": [],
+            "price": "1200"
+        }
+    ]
+}
