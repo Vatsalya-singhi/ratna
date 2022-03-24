@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ratna/static/css/main.9f067457.css",
+    "main.js": "/ratna/static/js/main.11e5539e.js",
+    "static/js/787.461059ec.chunk.js": "/ratna/static/js/787.461059ec.chunk.js",
+    "static/media/aloe-vera-4.jpg": "/ratna/static/media/aloe-vera-4.7375311de8cdd1d8dedc.jpg",
+    "static/media/aloe-vera-3.jpg": "/ratna/static/media/aloe-vera-3.6cca8cf38154fd6b9feb.jpg",
+    "static/media/aloe-vera-2.jpg": "/ratna/static/media/aloe-vera-2.a3b5aed41d2a228aa901.jpg",
+    "static/media/aloe-vera-1.jpg": "/ratna/static/media/aloe-vera-1.5688e90c07373b329b6a.jpg",
+    "static/media/ratna1.svg": "/ratna/static/media/ratna1.d3be7792947fb3740e7b9b4c0828e31e.svg",
+    "static/media/no_image.svg": "/ratna/static/media/no_image.eb20a03a4af22e2d218e.svg",
+    "static/media/aloevera.jpg": "/ratna/static/media/aloevera.b393c2deeb8c78f47115.jpg",
+    "static/media/hairstock3.jpg": "/ratna/static/media/hairstock3.c30ca0ea9cd3e8e4b64e.jpg",
+    "static/media/dry-fruits-burfi-3.jpg": "/ratna/static/media/dry-fruits-burfi-3.17bb5d445de0b56ffa2f.jpg",
+    "static/media/burfi.jpg": "/ratna/static/media/burfi.7da73f4d0e6bfb1c742f.jpg",
+    "static/media/massageoil.jpg": "/ratna/static/media/massageoil.12270258921b748b5c53.jpg",
+    "static/media/hairstock2.webp": "/ratna/static/media/hairstock2.1d29560c4cbd68ebda3a.webp",
+    "static/media/bottle.jpg": "/ratna/static/media/bottle.40d66829fd4f36f8a7c3.jpg",
+    "index.html": "/ratna/index.html",
+    "main.9f067457.css.map": "/ratna/static/css/main.9f067457.css.map",
+    "main.11e5539e.js.map": "/ratna/static/js/main.11e5539e.js.map",
+    "787.461059ec.chunk.js.map": "/ratna/static/js/787.461059ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f067457.css",
+    "static/js/main.11e5539e.js"
+  ]
+}
