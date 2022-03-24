@@ -17,14 +17,14 @@ function HeroPage() {
 
                         {/* HEADER */}
                         <div className='h-25 w-100 d-flex align-items-center justify-content-center mb-4'>
-                            <p role="button">
+                            <div role="button">
                                 <h1 className="m-0 mt-5 font-weight-bold text-uppercase heading">
                                     र<span style={{ fontSize: "35px" }} >atna</span>
                                 </h1>
                                 <sub className="m-0 text-dark" role="button">
                                     Premium collection of unique homemade products with ❤️
                                 </sub>
-                            </p>
+                            </div>
                         </div>
                         {/* BODY */}
                         <div className='h-50 parent-story'>
@@ -37,11 +37,11 @@ function HeroPage() {
                         </div>
                         {/* FOOTER */}
                         <div className="h-25 footer">
-                            <Link activeClass="active" to="productList" spy={true} smooth={true}>
-                                <a className="btn btn-outline-dark btn-lg m-2 text-dark" role="button" rel="nofollow noreferrer">Learn More</a>
+                            <Link activeClass="active" to="productList" spy={true} smooth={true} className="btn btn-outline-dark btn-lg m-2 text-dark">
+                                Learn More
                             </Link>
-                            <Link activeClass="active" to="contact" spy={true} smooth={true}>
-                                <a className="btn btn-outline-dark btn-lg m-2 text-dark" role="button" rel="noreferrer">Contact us</a>
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} className="btn btn-outline-dark btn-lg m-2 text-dark">
+                                Contact us
                             </Link>
                         </div>
 
