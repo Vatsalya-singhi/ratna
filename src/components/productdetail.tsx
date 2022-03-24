@@ -5,7 +5,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import './productdetail.css';
 
-import db from '../assets/db.json';
+// import db from '../assets/db.json';
+import { db } from '../service/db';
 
 
 function ProductDetails() {
@@ -51,7 +52,7 @@ function ProductDetails() {
                         <>
                             <b>{obj?.key}</b>
                             <ol>
-                                {obj?.value?.map((val: string) => <li>{val}</li>)}
+                                {obj?.value?.map((val: string, index: number) => <li key={index}>{val}</li>)}
                             </ol>
                         </>
                     )
@@ -104,10 +105,10 @@ function ProductDetails() {
                             {
                                 product && product.img_array && product.img_array.map((img: string, index: number) => {
                                     return (
-                                        <a role="button"
+                                        <a role="button" key={index}
                                             onClick={() => updatePreviewImage(img, index)}
                                             className={`navbar-brand pic-list mx-2 ${coverImgIndex === index ? 'active-img' : ''}`}>
-                                            <img src={img} height="40" width="45" alt="logo" loading="lazy" />
+                                            <img src={img} key={index} height="40" width="45" alt="logo" loading="lazy" />
                                         </a>
                                     )
                                 })
@@ -118,22 +119,21 @@ function ProductDetails() {
                 </div>
 
                 {/* RIGHT */}
-                <div className='col-lg-6 col-md-7 col-sm-12 sub-parent-story'>
+                <div className='col-lg-6 col-md-7 col-sm-12 sub-parent-story my-2'>
+
                     <h5 className='text-center mb-2'>{product.name} ({product.size})</h5>
-                    <p className="sub-story">
+                    <div className="sub-story">
 
                         <p>{product.card_text}</p>
 
                         {contentMaker()}
-                    </p>
+                    </div>
 
-                    <footer className='w-100 row'>
-                        <div className='col-lg-6 col-md-5 col-sm-12'>
-                            <h5>
-                                ₹ {product.price} ONLY
-                            </h5>
-                        </div>
-                        <span className='col-lg-6 col-md-5 col-sm-12'>
+                    <footer className='d-flex align-items-center justify-content-between my-3'>
+                        <span className='text-bold'>
+                            ₹{product.price} ONLY
+                        </span>
+                        <span>
                             Additional Packaging Charges (if applicable)
                         </span>
                     </footer>

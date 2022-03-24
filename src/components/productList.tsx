@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
+
+import ProductPreview from './productpreview';
 import './productList.css';
 
-import db from '../assets/db.json';
-import ProductPreview from './productpreview';
+import { db } from '../service/db';
+// import db from '../assets/db.json';
 
 function ProductList() {
 
