@@ -33,12 +33,18 @@ header {
 }
 
 sub {
-    /* vertical-align: sub;
-    font-size: smaller; */
     display: block;
     font-size: 1.1em;
     line-height: 1.2em;
     letter-spacing: 0.6px;
+}
+
+.tag-heading {
+    will-change: contents;
+    opacity: 0;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 0.3s 0.7s forwards;
 }
 
 /* --------------------- */
@@ -49,6 +55,12 @@ sub {
     align-items: flex-start;
     justify-content: start;
     margin-block: 20px;
+
+    will-change: contents;
+    opacity: 0;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeInLeft 0.5s 0.7s forwards;
 }
 
 .story {
@@ -66,6 +78,10 @@ sub {
 
 .footer {
     margin-bottom: 15px;
+
+    a:hover {
+        background: #d5bba2b8;
+    }
 }
 
 @media (max-width: 992px) {

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import './productdetail.css';
+import './productdetail.scss';
 
 // import db from '../assets/db.json';
 import { db } from '../service/db';
@@ -107,6 +107,7 @@ function ProductDetails() {
                                     return (
                                         <a role="button" key={index}
                                             onClick={() => updatePreviewImage(img, index)}
+                                            onMouseOver={() => updatePreviewImage(img, index)}
                                             className={`navbar-brand pic-list mx-2 ${coverImgIndex === index ? 'active-img' : ''}`}>
                                             <img src={img} key={index} height="40" width="45" alt="logo" loading="lazy" />
                                         </a>

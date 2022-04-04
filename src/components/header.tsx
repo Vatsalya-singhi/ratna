@@ -2,11 +2,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import Logo from '../assets/ratna1.svg';
 
-import './header.css';
+import './header.scss';
 
 function Header() {
 
@@ -16,14 +15,31 @@ function Header() {
         let path = window.location.pathname;
         if (path === '/') {
             return (
-                <Link activeClass="active" className="nav-link active" to="home" role="button" >
+                <Link activeClass="active" className="nav-link active header-link" to="home" role="button" >
                     Home
                 </Link>
             )
         } else {
             return (
-                <a className="nav-link active" role="button" onClick={() => navigate('/')} >
+                <a className="nav-link active header-link" role="button" onClick={() => navigate('/')} >
                     Home
+                </a>
+            )
+        }
+    }
+
+    const ProductButton = () => {
+        let path = window.location.pathname;
+        if (path === '/') {
+            return (
+                <Link activeClass="active" className="nav-link active header-link" to="productList" role="button">
+                    Products
+                </Link>
+            )
+        } else {
+            return (
+                <a className="nav-link active header-link" role="button" onClick={() => navigate(-1)} >
+                    Products
                 </a>
             )
         }
@@ -49,21 +65,17 @@ function Header() {
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             {HomeButton()}
-                            {/* <Link activeClass="active" className="nav-link active" to="home" role="button" >
-                                Home
-                            </Link> */}
                         </li>
                         <li className="nav-item">
-                            <Link activeClass="active" className="nav-link active" to="productList" role="button">
-                                Products
-                            </Link>
+                            {ProductButton()}
                         </li>
                         <li className="nav-item">
-                            <Link activeClass="active" className="nav-link active" to="contact" role="button">
+                            <Link activeClass="active" className="nav-link active header-link" to="contact" role="button">
                                 Contact us
                             </Link>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
