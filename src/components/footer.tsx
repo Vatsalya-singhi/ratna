@@ -10,19 +10,33 @@ import './footer.scss';
 
 function Footer() {
 
+    const {
+        REACT_APP_DUMMY_LAT,
+        REACT_APP_DUMMY_LNG,
+        REACT_APP_EXACT_LAT,
+        REACT_APP_EXACT_LNG,
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
+        REACT_APP_USER_ID,
+        REACT_APP_SOCIAL_FACEBOOK,
+        REACT_APP_SOCIAL_MAIL,
+        REACT_APP_SOCIAL_INSTAGRAM,
+        REACT_APP_SOCIAL_PHONE,
+    } = process.env;
+
     const form = useRef<any>();
-    // const position = [13.089833, 80.244910]; // exact location
-    const position = [13.087983, 80.243387]; // dummy location
+    const position = [REACT_APP_DUMMY_LAT, REACT_APP_DUMMY_LNG];
+
 
     const sendEmail = (e: any) => {
         e.preventDefault();
 
         emailjs
             .sendForm(
-                'service_bh8gy5s',
-                'template_2152c7l',
+                REACT_APP_SERVICE_ID ?? "",
+                REACT_APP_TEMPLATE_ID ?? "",
                 form.current,
-                'tuVasZSoCGouqSOn2'
+                REACT_APP_USER_ID
             )
             .then(() => {
                 alert('Message successfully sent!');
@@ -94,23 +108,22 @@ function Footer() {
             </div>
             {/* Grid container */}
 
-
             {/* Section: Social media */}
             <section className="mb-4 d-flex align-items-center justify-content-center">
                 {/* Facebook */}
-                <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/vatsalya.singhi" target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_FACEBOOK} target='_blank' role="button" rel="noreferrer">
                     <i className="fab fa-facebook-f" />
                 </a>
                 {/* Google */}
-                <a className="btn btn-outline-light btn-floating m-1" href="mailto:vatsalya.singhi@gmail.com" target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_MAIL} target='_blank' role="button" rel="noreferrer">
                     <i className="fab fa-google" />
                 </a>
                 {/* Instagram */}
-                <a className="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/vatsalya_singhi/" target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_INSTAGRAM} target='_blank' role="button" rel="noreferrer">
                     <i className="fab fa-google" />
                 </a>
                 {/* Phone */}
-                <a className="btn btn-outline-light btn-floating m-1" href="tel:+91 7010961854" target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_PHONE} target='_blank' role="button" rel="noreferrer">
                     {/* <i className="fa fa-phone" /> */}
                     <i className="fas fa-phone-alt"></i>
                 </a>
