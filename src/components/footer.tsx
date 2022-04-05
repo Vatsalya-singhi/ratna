@@ -48,13 +48,21 @@ function Footer() {
 
     return (
         <footer id='contact' className="bg-dark text-center text-white">
-            <div className="container p-4">
+            <div className="container">
 
-                {/* Section: Form */}
-                <section className="contact-page" >
+                <section className="row p-4" >
+
+                    <div className='text-center my-2'>
+                        <h5 className='my-2 px-2'>Connect with us! </h5>
+                    </div>
 
                     {/* Contact form */}
-                    <div className="contact-form">
+                    <div className="contact-form col-lg-6 col-md-6 col-sm-12 mb-2">
+
+                        <div className='text-center my-2'>
+                            <h5 className='my-2 px-2'>Contact Form</h5>
+                        </div>
+
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className="half">
@@ -94,7 +102,7 @@ function Footer() {
                     </div>
 
                     {/* Maps */}
-                    <div className="map-wrap">
+                    <div className="map-wrap col-lg-6 col-md-6 col-sm-12 mb-2">
                         <MapContainer center={position} zoom={13}>
                             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                             <Marker position={position}>
@@ -103,27 +111,25 @@ function Footer() {
                     </div>
 
                 </section>
-                {/* Section: Form */}
 
             </div>
-            {/* Grid container */}
 
             {/* Section: Social media */}
             <section className="mb-4 d-flex align-items-center justify-content-center">
                 {/* Facebook */}
-                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_FACEBOOK} target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1 my-2 social-btn" href={REACT_APP_SOCIAL_FACEBOOK} target='_blank' role="button" rel="noreferrer">
                     <i className="fab fa-facebook-f" />
                 </a>
                 {/* Google */}
-                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_MAIL} target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1 my-2 social-btn" href={REACT_APP_SOCIAL_MAIL} target='_blank' role="button" rel="noreferrer">
                     <i className="fab fa-google" />
                 </a>
                 {/* Instagram */}
-                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_INSTAGRAM} target='_blank' role="button" rel="noreferrer">
-                    <i className="fab fa-google" />
+                <a className="btn btn-outline-light btn-floating m-1 my-2 social-btn" href={REACT_APP_SOCIAL_INSTAGRAM} target='_blank' role="button" rel="noreferrer">
+                    <i className="fab fa-instagram" />
                 </a>
                 {/* Phone */}
-                <a className="btn btn-outline-light btn-floating m-1" href={REACT_APP_SOCIAL_PHONE} target='_blank' role="button" rel="noreferrer">
+                <a className="btn btn-outline-light btn-floating m-1 my-2 social-btn" href={REACT_APP_SOCIAL_PHONE} target='_blank' role="button" rel="noreferrer">
                     {/* <i className="fa fa-phone" /> */}
                     <i className="fas fa-phone-alt"></i>
                 </a>

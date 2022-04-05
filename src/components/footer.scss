@@ -1,16 +1,13 @@
 .contact-page {
-    width: 100%;
-    height: 55vh !important;
-    max-height: 60vh !important;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     overflow: hidden;
+    min-height: 55vh !important;
+    height: 55vh !important;
+    max-height: 70vh !important;
 }
 
 .contact-form {
     height: 100%;
-    margin-top: 20px;
+    // margin-top: 20px;
 
     ul {
         padding: 0;
@@ -84,11 +81,11 @@
 }
 
 .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    width: 50%;
-    height: 100%;
+    // background: rgba(8, 253, 216, 0.1);
     overflow: hidden !important;
-    // margin-top: -3%;
+    min-height: 55vh !important;
+    height: 55vh !important;
+    max-height: 70vh !important;
 }
 
 .leaflet-container {
@@ -129,6 +126,15 @@
             color: #ffd700;
         }
     }
+}
+
+.social-btn {
+    position: relative;
+    transition: 0.5s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
 }
 
 // footer {
