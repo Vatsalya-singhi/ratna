@@ -12,9 +12,13 @@ import AleoVera3 from "../assets/aloe_vera/aloe-vera-3.jpg";
 import AleoVera4 from "../assets/aloe_vera/aloe-vera-4.jpg";
 
 import Burfi from "../assets/dry_fruits_burfi/burfi.jpg";
-// import Burfi1 from "../assets/dry_fruits_burfi/dry-fruits-burfi-1.jpg";
+import Burfi1 from "../assets/dry_fruits_burfi/dry-fruits-burfi-1.jpg";
 import Burfi2 from "../assets/dry_fruits_burfi/dry-fruits-burfi-2.jpg";
 import Burfi3 from "../assets/dry_fruits_burfi/dry-fruits-burfi-3.jpg";
+import Burfi4 from "../assets/dry_fruits_burfi/dry-fruits-burfi-4.jpg";
+import Burfi5 from "../assets/dry_fruits_burfi/dry-fruits-burfi-5.jpg";
+import Burfi6 from "../assets/dry_fruits_burfi/dry-fruits-burfi-6.jpg";
+import Burfi7 from "../assets/dry_fruits_burfi/dry-fruits-burfi-7.jpg";
 
 export const db = {
     "productList": [
@@ -108,9 +112,13 @@ export const db = {
             "card_text": "This sweet has no artificial sweetner and rich source of protein, vitamins, minerals, and dietary fiber, making them a tasty and healthy snack.",
             "img_array": [
                 Burfi,
-                // Burfi1,
+                Burfi1,
                 Burfi2,
                 Burfi3,
+                Burfi4,
+                Burfi5,
+                Burfi6,
+                Burfi7,
             ],
             "size": "200 ml",
             "content": [],
