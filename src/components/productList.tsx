@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 
 import ProductPreview from './productpreview';
-import './productList.css';
+import './productList.scss';
 
 import { db } from '../service/db';
 // import db from '../assets/db.json';

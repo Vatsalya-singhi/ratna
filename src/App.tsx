@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from './components/header';
 import Footer from './components/footer';
 import HeroPage from './components/heropage';
@@ -13,47 +13,41 @@ import ScrollToTop from './service/ScrollToTop';
 function App() {
     return (
         <div className="App">
+            <ScrollToTop />
 
-            {/* <Header />
+            <Header />
             <main className='bg-white'>
-                <HeroPage />
-                <Product />
-            </main>
-            <Footer /> */}
 
+                <Routes>
 
-            <main className='bg-white'>
-                <Router>
-                    <ScrollToTop />
-                    <Routes>
-                        {/* HOME PAGE */}
-                        <Route
-                            path='/'
-                            element={
-                                <>
-                                    <Header />
-                                    <HeroPage />
-                                    <ProductList />
-                                </>
-                            }>
-                        </Route>
-                        {/* PRODUCT DETAILS PAGE */}
-                        <Route
-                            path='product/:productID'
-                            element={
-                                <>
-                                    <Header />
-                                    <ProductDetails />
-                                </>
-                            }>
-                        </Route>
-                        {/* REDIRECT */}
-                        <Route
-                            path='*'
-                            element={<Navigate replace to="/" />}>
-                        </Route>
-                    </Routes>
-                </Router>
+                    {/* HOME PAGE */}
+                    <Route
+                        path='/'
+                        element={
+                            <>
+                                <HeroPage />
+                                <ProductList />
+                            </>
+                        }>
+                    </Route>
+
+                    {/* PRODUCT DETAILS PAGE */}
+                    <Route
+                        path='product/:productID'
+                        element={
+                            <>
+                                <ProductDetails />
+                            </>
+                        }>
+                    </Route>
+
+                    {/* REDIRECT */}
+                    <Route
+                        path='*'
+                        element={<Navigate replace to="/" />}>
+                    </Route>
+
+                </Routes>
 
             </main>
             <Footer />

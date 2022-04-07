@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import './heropage.css';
+import './heropage.scss';
 
 function HeroPage() {
     return (
@@ -21,7 +21,7 @@ function HeroPage() {
                                 <h1 className="m-0 mt-5 font-weight-bold text-uppercase heading">
                                     र<span style={{ fontSize: "35px" }} >atna</span>
                                 </h1>
-                                <sub className="m-0 text-dark" role="button">
+                                <sub className="m-0 text-dark tag-heading" role="button">
                                     Premium collection of unique homemade products with ❤️
                                 </sub>
                             </div>

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import './productpreview.css';
+import './productpreview.scss';
 
 const ProductPreview = (props: any) => {
 
