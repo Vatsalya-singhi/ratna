@@ -1,24 +1,31 @@
 import Bottle from '../assets/oil/bottle.jpg';
-import hairstock1 from '../assets/oil/hairstock1.jpg';
-import hairstock2 from '../assets/oil/hairstock2.webp';
-import hairstock3 from '../assets/oil/hairstock3.jpg';
-import massageOil from '../assets/oil/massageoil.jpg';
-import oilBottle from '../assets/oil/oilbottle.jpg';
+import Oil1 from '../assets/oil/oil-1.jpg';
+import Oil2 from '../assets/oil/oil-2.webp';
+import Oil3 from '../assets/oil/oil-3.jpg';
+import Oil4 from '../assets/oil/oil-4.jpg';
+import Oil5 from '../assets/oil/oil-5.jpg';
+import Oil6 from '../assets/oil/oil-6.jpg';
+import Oil7 from '../assets/oil/oil-7.webp';
 
-import AleoVera from "../assets/aloe_vera/aloevera.jpg";
-import AleoVera1 from "../assets/aloe_vera/aloe-vera-1.jpg";
-import AleoVera2 from "../assets/aloe_vera/aloe-vera-2.jpg";
-import AleoVera3 from "../assets/aloe_vera/aloe-vera-3.jpg";
-import AleoVera4 from "../assets/aloe_vera/aloe-vera-4.jpg";
+import AleoVera from '../assets/aloe_vera/aloevera.jpg';
+import AleoVera1 from '../assets/aloe_vera/aloe-vera-1.jpg';
+import AleoVera2 from '../assets/aloe_vera/aloe-vera-2.jpg';
+import AleoVera3 from '../assets/aloe_vera/aloe-vera-3.jpg';
+import AleoVera4 from '../assets/aloe_vera/aloe-vera-4.jpg';
+import AleoVera5 from '../assets/aloe_vera/aloe-vera-5.jpg';
+import AleoVera6 from '../assets/aloe_vera/aloe-vera-6.jpg';
+import AleoVera7 from '../assets/aloe_vera/aloe-vera-7.jpg';
+import AleoVera8 from '../assets/aloe_vera/aloe-vera-8.jpg';
 
-import Burfi from "../assets/dry_fruits_burfi/burfi.jpg";
-import Burfi1 from "../assets/dry_fruits_burfi/dry-fruits-burfi-1.jpg";
-import Burfi2 from "../assets/dry_fruits_burfi/dry-fruits-burfi-2.jpg";
-import Burfi3 from "../assets/dry_fruits_burfi/dry-fruits-burfi-3.jpg";
-import Burfi4 from "../assets/dry_fruits_burfi/dry-fruits-burfi-4.jpg";
-import Burfi5 from "../assets/dry_fruits_burfi/dry-fruits-burfi-5.jpg";
-import Burfi6 from "../assets/dry_fruits_burfi/dry-fruits-burfi-6.jpg";
-import Burfi7 from "../assets/dry_fruits_burfi/dry-fruits-burfi-7.jpg";
+import Burfi from '../assets/dry_fruits_burfi/burfi.jpg';
+import Burfi1 from '../assets/dry_fruits_burfi/dry-fruits-burfi-1.jpg';
+import Burfi2 from '../assets/dry_fruits_burfi/dry-fruits-burfi-2.jpg';
+import Burfi3 from '../assets/dry_fruits_burfi/dry-fruits-burfi-3.jpg';
+import Burfi4 from '../assets/dry_fruits_burfi/dry-fruits-burfi-4.jpg';
+import Burfi5 from '../assets/dry_fruits_burfi/dry-fruits-burfi-5.jpg';
+import Burfi6 from '../assets/dry_fruits_burfi/dry-fruits-burfi-6.jpg';
+import Burfi7 from '../assets/dry_fruits_burfi/dry-fruits-burfi-7.jpg';
+
 
 export const db = {
     "productList": [
@@ -30,11 +37,13 @@ export const db = {
             "card_text": "The formulation of neem, nettle, birch bark, arnica and burdock root infused with handpressed oil addresses a variety of hair and scalp needs.",
             "img_array": [
                 Bottle,
-                hairstock1,
-                hairstock2,
-                hairstock3,
-                massageOil,
-                oilBottle,
+                Oil1,
+                Oil2,
+                Oil3,
+                Oil4,
+                Oil5,
+                Oil6,
+                Oil7,
             ],
             "size": "300 ml",
             "content": [
@@ -72,10 +81,17 @@ export const db = {
             "card_title": "Aloe Vera Gel",
             "card_text": "The Aloe Vera Gel extract is an excellent natural day cream for face and body and help soothe your skin problems. 100% organic and safe for natural healthy skin.",
             "img_array": [
+                AleoVera,
                 AleoVera1,
                 AleoVera2,
                 AleoVera3,
                 AleoVera4,
+                AleoVera5,
+                AleoVera6,
+                AleoVera7,
+                AleoVera8,
+                // AleoVera9,
+                // AleoVera10,
             ],
             "size": "200 ml",
             "content": [

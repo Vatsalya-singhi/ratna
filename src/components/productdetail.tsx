@@ -98,7 +98,7 @@ function ProductDetails() {
                         <button id='back_button' type="button" className="d-btn btn btn-outline-dark bg-white" data-mdb-ripple-color="dark" onClick={() => navigate(-1)}>
                             <i className="fa fa-arrow-left"></i>
                         </button>
-                        <img src={coverImg} className="img-fluid w-100 cover-img" loading="lazy" />
+                        <img src={coverImg} className="img-fluid w-100 cover-img" style={{ "objectFit": "contain" }} loading="lazy" />
                     </div>
 
                     {/* list of images */}
