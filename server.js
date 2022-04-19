@@ -11,6 +11,9 @@ app.use(express.static(path.resolve(__dirname, './build')));
 app.use(express.json())
 // Compress all HTTP responses
 app.use(compression());
+app.use(function (req, res, next) {
+    res.set('Cache-control', 'public, max-age=300')
+})
 
 
 // Handle GET requests to /api route
