@@ -21,6 +21,7 @@
     "@types/react-dom": "^17.0.13",
     "animate.css": "^4.1.1",
     "axios": "^0.26.1",
+    "compress-create-react-app": "^1.2.1",
     "dotenv": "^16.0.0",
     "gsap-trial": "^3.10.2",
     "loaders.css": "^0.1.2",
@@ -45,7 +46,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "run-prod-build" : "react-scripts build && compress-cra && serve -p 443 -s build"
+    "run-prod-build": "react-scripts build && compress-cra && serve -p $PORT -s build"
   },
   "eslintConfig": {
     "extends": [
@@ -68,7 +69,7 @@
   "devDependencies": {
     "@types/react-scroll": "^1.8.3",
     "compress-create-react-app": "^1.2.1",
-    "serve": "^13.0.2",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "serve": "^13.0.2"
   }
 }
