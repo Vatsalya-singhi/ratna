@@ -9,7 +9,9 @@ const ProductPreview = (props: any) => {
     // set variables
     let product = props.product;
     var cover_img = props.cover_img;
-    
+
+    console.log('cover_img=>', cover_img);
+
     // navigate functions
     const navigate = useNavigate();
     const onProductClick = () => {

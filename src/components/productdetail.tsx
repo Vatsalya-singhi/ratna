@@ -6,8 +6,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import './productdetail.scss';
 
-// import db from '../assets/db.json';
-import { db } from '../service/db';
+// import { db } from '../service/db';
+import db from '../assets/db.json';
 
 
 function ProductDetails() {
@@ -22,6 +22,7 @@ function ProductDetails() {
     // set product
     useEffect(() => {
         let arr = db['productList'];
+        debugger;
         let product = arr.find((product) => product.id === parseInt(productID ?? ""));
 
         if (!product || product == null) {

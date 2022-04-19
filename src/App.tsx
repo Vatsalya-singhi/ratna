@@ -10,9 +10,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import ProductDetails from './components/productdetail';
 import ScrollToTop from './service/ScrollToTop';
 
+// import Notification from './components/notification';
+
 function App() {
     return (
         <div className="App">
+            {/* <Notification severity='success' message='Hello Notification'></Notification> */}
+
             <ScrollToTop />
 
             <Header />
