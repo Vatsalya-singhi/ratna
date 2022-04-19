@@ -3,16 +3,17 @@
         {
             "id": 0,
             "name": "Brilliantine",
-            "cover_img": "/img/oil/bottle.jpg",
+            "cover_img": "/assets/oil/bottle.jpg",
             "card_title": "Brilliantine",
             "card_text": "The formulation of neem, nettle, birch bark, arnica and burdock root infused with handpressed oil addresses a variety of hair and scalp needs.",
             "img_array": [
-                "/img/oil/bottle.jpg",
-                "/img/oil/hairstock1.jpg",
-                "/img/oil/hairstock2.webp",
-                "/img/oil/hairstock3.jpg",
-                "/img/oil/massage%20oil.jpg",
-                "/img/oil/oil%20bottle.jpg"
+                "/assets/oil/oil-1.jpg",
+                "/assets/oil/oil-2.webp",
+                "/assets/oil/oil-3.jpg",
+                "/assets/oil/oil-4.jpg",
+                "/assets/oil/oil-5.jpg",
+                "/assets/oil/oil-6.jpg",
+                "/assets/oil/oil-7.webp"
             ],
             "size": "300 ml",
             "content": [
@@ -46,15 +47,19 @@
         {
             "id": 1,
             "name": "Aloe Vera Gel",
-            "cover_img": "/img/aloe_vera/aloevera.jpg",
+            "cover_img": "/assets/aloe_vera/aloevera.jpg",
             "card_title": "Aloe Vera Gel",
             "card_text": "The Aloe Vera Gel extract is an excellent natural day cream for face and body and help soothe your skin problems. 100% organic and safe for natural healthy skin.",
             "img_array": [
-                "/img/aloe_vera/aloevera.jpg",
-                "/img/aloe_vera/aloe-vera-1.jpg",
-                "/img/aloe_vera/aloe-vera-2.jpg",
-                "/img/aloe_vera/aloe-vera-3.jpg",
-                "/img/aloe_vera/aloe-vera-4.jpg"
+                "/assets/aloe_vera/aloevera.jpg",
+                "/assets/aloe_vera/aloe-vera-1.jpg",
+                "/assets/aloe_vera/aloe-vera-2.jpg",
+                "/assets/aloe_vera/aloe-vera-3.jpg",
+                "/assets/aloe_vera/aloe-vera-4.jpg",
+                "/assets/aloe_vera/aloe-vera-5.jpg",
+                "/assets/aloe_vera/aloe-vera-6.jpg",
+                "/assets/aloe_vera/aloe-vera-7.jpg",
+                "/assets/aloe_vera/aloe-vera-8.jpg"
             ],
             "size": "200 ml",
             "content": [
@@ -86,14 +91,18 @@
         {
             "id": 2,
             "name": "Dry Fruits Burfi",
-            "cover_img": "/img/dry_fruits_burfi/burfi.jpg",
+            "cover_img": "/assets/dry_fruits_burfi/burfi.jpg",
             "card_title": "Dry Fruits Burfi",
             "card_text": "This sweet has no artificial sweetner and rich source of protein, vitamins, minerals, and dietary fiber, making them a tasty and healthy snack.",
             "img_array": [
-                "/img/dry_fruits_burfi/burfi.jpg",
-                "/img/dry_fruits_burfi/dry-fruits-burfi-1.png",
-                "/img/dry_fruits_burfi/dry-fruits-burfi-2.jpg",
-                "/img/dry_fruits_burfi/dry-fruits-burfi-3.jpg"
+                "/assets/dry_fruits_burfi/burfi.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-1.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-2.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-3.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-4.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-5.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-6.jpg",
+                "/assets/dry_fruits_burfi/dry-fruits-burfi-7.jpg"
             ],
             "size": "200 ml",
             "content": [],
