@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require('path');
 const compression = require('compression');
-
+const helmet = require('helmet')
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -11,6 +11,11 @@ app.use(express.static(path.resolve(__dirname, './build')));
 app.use(express.json())
 // Compress all HTTP responses
 app.use(compression());
+// protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately
+app.use(helmet())
+app.disable('x-powered-by')
+
+
 app.use(function (req, res, next) {
     res.set('Cache-control', 'public, max-age=300')
 })
